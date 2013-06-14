@@ -1,7 +1,7 @@
 <?php
 
 /**
-* Base file for tmhOAuth-examples. This class extends tmhOAuth which means
+* Base file for tmhOAuthExamples. This class extends tmhOAuth which means
 * it can do everything tmhOAuth does. All examples implement this class as
 * opposed to tmhOAuth directly.
 *
@@ -14,9 +14,7 @@
 * that users have allowed you to use on their behalf.
 *
 * Instructions:
-* 1) Ensure you have tmhOAuth checked out. If not execute:
-*      git submodule init
-*      git submodule update
+* 1) Ensure you have tmhOAuth checked out or installed via composer.
 * 2) If you don't have one already, create a Twitter application on
 *      https://dev.twitter.com/apps
 * 3) From the application details page copy the consumer key and consumer
@@ -26,7 +24,7 @@
 *      secret into the place in this code marked with (A_USER_TOKEN
 *      and A_USER_SECRET)
 * 5) In a terminal or on a server run any of the example scripts:
-*      php /path/to/here/verify_credentials.php
+*      php verify_credentials.php
 *
 * @author themattharris
 */

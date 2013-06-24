@@ -37,7 +37,7 @@ if (file_exists(__DIR__.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'autolo
 } elseif (file_exists(__DIR__.DIRECTORY_SEPARATOR.'tmhOAuth'.DIRECTORY_SEPARATOR.'tmhOAuth.php')) {
   require __DIR__.DIRECTORY_SEPARATOR.'tmhOAuth'.DIRECTORY_SEPARATOR.'tmhOAuth.php';
 } else {
-  throw "tmhOAuth.php could not be found. have you tried installing with composer?";
+  throw new \RuntimeException("tmhOAuth.php could not be found. have you tried installing with composer?");
 }
 
 class tmhOAuthExample extends tmhOAuth {

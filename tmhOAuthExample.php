@@ -48,10 +48,10 @@ class tmhOAuthExample extends tmhOAuth {
       array(
 
         // change the values below to ones for your application
-        'consumer_key'    => 'YOUR_CONSUMER_KEY',
-        'consumer_secret' => 'YOUR_CONSUMER_SECRET',
-        'token'           => 'A_USER_TOKEN',
-        'secret'          => 'A_USER_SECRET',
+        'consumer_key'    => '8kRaeNjDpFAOuUfBNGN9A',
+        'consumer_secret' => 'az3miP7aghs57rWUHpR8Esgg0Eybb8vYFfuywIcu4',
+        'token'           => 'pboRsRApE32ig3t1u6lZX8diLRPMss1RLy79jVgj',
+        'secret'          => 'OL3BmqXLehyqiS6zAv3h6iQdho74oE8NnvbvtvuUi3U',
         'bearer'          => 'YOUR_OAUTH2_TOKEN',
 
         'user_agent'      => 'tmhOAuth ' . parent::VERSION . ' Examples 0.1',

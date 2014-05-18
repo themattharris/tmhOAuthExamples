@@ -7,11 +7,18 @@ $image = __DIR__ . DIRECTORY_SEPARATOR . 'photo.jpg';
 $name  = basename($image);
 $status = "Picture time";
 
+if (class_exists('CurlFile', false)) {
+  $media = new CurlFile($image);
+} else {
+  $media = "@{$image};type=image/jpeg;filename={$name}";
+}
+
+
 $code = $tmhOAuth->user_request(array(
   'method' => 'POST',
   'url' => $tmhOAuth->url('1.1/statuses/update_with_media'),
   'params' => array(
-    'media[]'  => "@{$image};type=image/jpeg;filename={$name}",
+    'media[]'  => $media,
     'status'   => $status,
   ),
   'multipart' => true,

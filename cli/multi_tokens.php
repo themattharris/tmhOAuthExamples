@@ -27,6 +27,6 @@ request();
 $tmhOAuth->reconfigure(array_merge($tmhOAuth->config, array(
   'token' => 'ANOTHER_USER_TOKEN',
   'secret' => 'ANOTHER_USER_SECRET',
-));
+)));
 
 request();
